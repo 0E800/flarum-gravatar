@@ -1,4 +1,4 @@
-System.register('smachi/gravatar/components/GravatarSettingsModal', ['flarum/components/SettingsModal'], function (_export) {
+System.register('oe800/gravatar/components/GravatarSettingsModal', ['flarum/components/SettingsModal'], function (_export) {
 	/*
   * This file is part of smachi/flarum-envato-login-page
   *
@@ -45,7 +45,7 @@ System.register('smachi/gravatar/components/GravatarSettingsModal', ['flarum/com
 								null,
 								'Default Avatar'
 							),
-							m('input', { className: 'FormControl', bidi: this.setting('smachi-gravatar.default_avatar') }),
+							m('input', { className: 'FormControl', bidi: this.setting('oe800-gravatar.default_avatar') }),
 							'ex:/assets/avatar.png'
 						)];
 					}
@@ -57,7 +57,7 @@ System.register('smachi/gravatar/components/GravatarSettingsModal', ['flarum/com
 		}
 	};
 });;
-System.register('smachi/gravatar/main', ['flarum/extend', 'flarum/app', 'smachi/gravatar/components/GravatarSettingsModal'], function (_export) {
+System.register('oe800/gravatar/main', ['flarum/extend', 'flarum/app', 'oe800/gravatar/components/GravatarSettingsModal'], function (_export) {
   /*
    * This file is part of smachi/flarum-gravatar
    *
@@ -75,13 +75,13 @@ System.register('smachi/gravatar/main', ['flarum/extend', 'flarum/app', 'smachi/
       extend = _flarumExtend.extend;
     }, function (_flarumApp) {
       app = _flarumApp['default'];
-    }, function (_smachiGravatarComponentsGravatarSettingsModal) {
+    }, function (_oe800GravatarComponentsGravatarSettingsModal) {
       GravatarSettingsModal = _smachiGravatarComponentsGravatarSettingsModal['default'];
     }],
     execute: function () {
 
-      app.initializers.add('smachi-gravatar', function (app) {
-        app.extensionSettings['smachi-gravatar'] = function () {
+      app.initializers.add('oe800-gravatar', function (app) {
+        app.extensionSettings['oe800-gravatar'] = function () {
           return app.modal.show(new GravatarSettingsModal());
         };
       });
