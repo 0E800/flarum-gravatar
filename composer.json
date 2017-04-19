@@ -1,6 +1,6 @@
 {
-	"name": "smachi/flarum-gravatar",
-	"version": "0.1.1",
+	"name": "oe800/flarum-gravatar",
+	"version": "0.1.2",
 	"description": "Display gravatar if no avatar was uploaded by user.",
 	"type": "flarum-extension",
 	"keywords": [
@@ -20,11 +20,11 @@
 		"source": "https://github.com/smachi/flarum-gravatar"
 	},
 	"require": {
-		"flarum/core": "^0.1.0-beta.3"
+		"flarum/core": "^0.1.0-beta.6"
 	},
 	"autoload": {
 		"psr-4": {
-			"Smachi\\Gravatar\\": "src/"
+			"oe800\\Gravatar\\": "src/"
 		}
 	},
 	"extra": {
@@ -32,7 +32,7 @@
 			"title": "Gravatar",
 			"icon": {
 				"name": "user",
-				"backgroundColor": "#1E8CBE",
+				"backgroundColor": "black",
 				"color": "#FFF"
 			}
 		}
