@@ -10,8 +10,8 @@
 import { extend } from 'flarum/extend';
 import app from 'flarum/app';
 
-import GravatarSettingsModal from 'smachi/gravatar/components/GravatarSettingsModal';
+import GravatarSettingsModal from 'oe800/gravatar/components/GravatarSettingsModal';
 
-app.initializers.add('smachi-gravatar', app => {
-	app.extensionSettings['smachi-gravatar'] = () => app.modal.show(new GravatarSettingsModal());
+app.initializers.add('oe800-gravatar', app => {
+	app.extensionSettings['oe800-gravatar'] = () => app.modal.show(new GravatarSettingsModal());
 });
