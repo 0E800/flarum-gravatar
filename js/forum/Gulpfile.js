@@ -2,6 +2,6 @@ var gulp = require('flarum-gulp');
 
 gulp({
   modules: {
-    'smachi/gravatar': 'src/**/*.js'
+    'oe800/gravatar': 'src/**/*.js'
   }
 });
