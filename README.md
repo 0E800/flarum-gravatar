@@ -1,8 +1,9 @@
 # Gravatar integration for Flarum forums
 
+# Modified by 0E800 to be compatible with Flarum Beta 6
 
 ## Installation
 
-To install, use composer:
 
-``` composer require smachi/flarum-gravatar ```
+
+``` composer require oe800/flarum-gravatar ```
