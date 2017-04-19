@@ -1,4 +1,4 @@
-System.register('smachi/gravatar/helpers/md5', [], function (_export) {
+System.register('oe800/gravatar/helpers/md5', [], function (_export) {
 	/*
   * JavaScript MD5
   * https://github.com/blueimp/JavaScript-MD5
