@@ -76,7 +76,7 @@ System.register('oe800/gravatar/main', ['flarum/extend', 'flarum/app', 'oe800/gr
     }, function (_flarumApp) {
       app = _flarumApp['default'];
     }, function (_oe800GravatarComponentsGravatarSettingsModal) {
-      GravatarSettingsModal = _smachiGravatarComponentsGravatarSettingsModal['default'];
+      GravatarSettingsModal = _oe800GravatarComponentsGravatarSettingsModal['default'];
     }],
     execute: function () {
 
