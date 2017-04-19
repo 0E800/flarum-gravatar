@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-use Smachi\Gravatar\Listener;
+use oe800\Gravatar\Listener;
 use Illuminate\Contracts\Events\Dispatcher;
 
 return function (Dispatcher $events) {
