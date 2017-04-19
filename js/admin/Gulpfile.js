@@ -2,7 +2,7 @@ var flarum = require('flarum-gulp');
 
 flarum({
   modules: {
-    'smachi/gravatar': [
+    'oe800/gravatar': [
       'src/**/*.js'
     ]
   }
