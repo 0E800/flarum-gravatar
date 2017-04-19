@@ -267,7 +267,7 @@ System.register('smachi/gravatar/helpers/md5', [], function (_export) {
 		execute: function () {}
 	};
 });;
-System.register('smachi/gravatar/main', ['flarum/app', 'flarum/models/User', 'smachi/gravatar/helpers/md5'], function (_export) {
+System.register('oe800/gravatar/main', ['flarum/app', 'flarum/models/User', 'oe800/gravatar/helpers/md5'], function (_export) {
 	/*
   * This file is part of smachi/flarum-gravatar
   *
@@ -287,12 +287,12 @@ System.register('smachi/gravatar/main', ['flarum/app', 'flarum/models/User', 'sm
 			app = _flarumApp['default'];
 		}, function (_flarumModelsUser) {
 			User = _flarumModelsUser['default'];
-		}, function (_smachiGravatarHelpersMd5) {
-			md5 = _smachiGravatarHelpersMd5['default'];
+		}, function (_oe800GravatarHelpersMd5) {
+			md5 = _oe800GravatarHelpersMd5['default'];
 		}],
 		execute: function () {
 
-			app.initializers.add('smachi-gravatar', function () {
+			app.initializers.add('oe800-gravatar', function () {
 
 				User.prototype.avatarUrl = function () {
 					var _this = this;
@@ -319,7 +319,7 @@ System.register('smachi/gravatar/main', ['flarum/app', 'flarum/models/User', 'sm
 							}, function (error) {
 
 								// Load the default avatar saved locally
-								var defaultAvatar = app.forum.attribute('default_avatar') || '/extensions/smachi-gravatar/default-avatar.png';
+								var defaultAvatar = app.forum.attribute('default_avatar') || '/vendor/oe800/flarum-gravatar/default-avatar.png';
 
 								user.pushAttributes({
 									avatarUrl: app.forum.attribute('baseUrl') + defaultAvatar
