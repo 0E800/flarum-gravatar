@@ -11,9 +11,9 @@
 
 import app from 'flarum/app';
 import User from 'flarum/models/User';
-import md5 from 'smachi/gravatar/helpers/md5';
+import md5 from 'oe800/gravatar/helpers/md5';
 
-app.initializers.add('smachi-gravatar', () =>  {
+app.initializers.add('oe800-gravatar', () =>  {
 
 	User.prototype.avatarUrl = function() {
 
@@ -40,7 +40,7 @@ app.initializers.add('smachi-gravatar', () =>  {
 			}, function(error) {
 
 				// Load the default avatar saved locally
-				let defaultAvatar = app.forum.attribute('default_avatar') || '/extensions/smachi-gravatar/default-avatar.png';
+				let defaultAvatar = app.forum.attribute('default_avatar') || '/vendor/oe800/flarum-gravatar/default-avatar.png';
 
 				user.pushAttributes({
 					avatarUrl: app.forum.attribute('baseUrl') + defaultAvatar
