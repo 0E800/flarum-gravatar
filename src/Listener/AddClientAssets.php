@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Smachi\Gravatar\Listener;
+namespace oe800\Gravatar\Listener;
 
 use Flarum\Event\ConfigureClientView;
 use Illuminate\Contracts\Events\Dispatcher;
@@ -33,14 +33,14 @@ class AddClientAssets {
 			$event->addAssets( [
 				__DIR__ . '/../../js/forum/dist/extension.js'
 			] );
-			$event->addBootstrapper( 'smachi/gravatar/main' );
+			$event->addBootstrapper( 'oe800/gravatar/main' );
 		}
 
 		if ( $event->isAdmin() ) {
 			$event->addAssets( [
 				__DIR__ . '/../../js/admin/dist/extension.js',
 			] );
-			$event->addBootstrapper( 'smachi/gravatar/main' );
+			$event->addBootstrapper( 'oe800/gravatar/main' );
 		}
 
 	}
