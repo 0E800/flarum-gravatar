@@ -22,7 +22,7 @@ export default class GravatarSettingsModal extends SettingsModal {
 		return [
 			<div className="Form-group">
 				<label>Default Avatar</label>
-				<input className="FormControl" bidi={this.setting('smachi-gravatar.default_avatar')}/>
+				<input className="FormControl" bidi={this.setting('oe800-gravatar.default_avatar')}/>
 				ex:/assets/avatar.png
 			</div>
 		];
